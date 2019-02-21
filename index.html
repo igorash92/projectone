@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="SkillUP Homework 6" />
+    <meta name="keywords" content="HTML form, HTML meta tag, CSS" />
+    <meta name="author" content="Dionis Condurache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <form action="/action_page.php" class="form-group">
+      <div class="form-field">
+        <label for="firstname">Your Name (required)</label>
+        <input id="firstname" name="firstname" type="text" required />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Your Email (required)</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <fieldset class="form-field">
+        <legend>What's all about?</legend>
+        <div>
+          <input id="bike" type="checkbox" name="bike" />
+          <label for="bike"> Say Hello</label>
+        </div>
+
+        <div>
+          <input id="car" type="checkbox" name="car" />
+          <label for="car"> Complain</label>
+        </div>
+
+        <div>
+          <input id="boat" type="checkbox" name="boat" checked />
+          <label for="boat"> Share a joke</label>
+        </div>
+      </fieldset>
+
+      <div class="form-field">
+        <label for="subject">Please select your car</label>
+        <select id="subject" name="subject">
+          <optgroup label="Europe">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+          <optgroup label="Japan">
+            <option value="toyota">Toyouta</option>
+            <option value="lexus">Lexus</option>
+            <option value="honda">Honda</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="comment">Your message:</label>
+        <textarea id="comment" name="comment"></textarea>
+      </div>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
